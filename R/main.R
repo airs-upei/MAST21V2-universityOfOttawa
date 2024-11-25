@@ -2,7 +2,7 @@
 .onLoad <- function(...) {
   shiny::addResourcePath(
     prefix = "MAST21-assets", # custom prefix that will be used to reference your directory
-    directoryPath = system.file("www", package = "MAST21V2-universityOfOttawa") # path to resource in your package
+    directoryPath = system.file("www", package = "MAST21V2UniversityOfOttawa") # path to resource in your package
   )
 }
 
