@@ -90,7 +90,7 @@ setup_questions <- function() {
 
                      psychTestR::one_button_page(shiny::tags$p(style = "text-align: left;", "Please note, it is possible that the program will stop working on your computer.  If this happens you may see “Aw Snap” and a “Reload” button.  Press the “Reload” button, and in most cases, the program will start up where it left off. You may be asked to enter your number-letter code again.
           When it says 'Resuming ongoing testing session. Please click OK to confirm.' click OK, and the page should reload where you were.
-          If however the “Reload” option is not available,  please e-mail ", shiny::tags$strong("cfmbonu@upei.ca"), "with a copy to ", shiny::tags$strong("airs@upei.ca"), " and state that the session could not be completed.  You will be contacted and provided the opportunity to do the test in the research lab space.")),
+          If however the “Reload” option is not available,  please e-mail ", shiny::tags$strong("cfmbonu@upei.ca"), "with a copy to ", shiny::tags$strong("nbaya063@uottawa.ca"), " and state that the session could not be completed.  You will be contacted and provided the opportunity to do the test in the research lab space.")),
 
 
                      psychTestR::NAFC_page(label = "computer_type",
@@ -114,7 +114,7 @@ setup_questions <- function() {
 
                      psychTestR::conditional(test = function(state, ...) {
                        psychTestR::answer(state) == "Not using headphones"
-                     }, logic = psychTestR::final_page("If you do not have headphones or earbuds, please contact airs@upei.ca to obtain headphones from the researchers.")),
+                     }, logic = psychTestR::final_page("If you do not have headphones or earbuds, please contact nbaya063@uottawa.ca to obtain headphones from the researchers.")),
 
                      psychTestR::elt_save_results_to_disk(complete = FALSE),
 
@@ -220,7 +220,7 @@ mast_21_uOttawa <-  function(mast_inst) {
 
 
                      psychTestR::code_block(function(state, ...) {
-                       snap <- sample(1:2, 1)
+                       snap <- 1
                        psychTestR::set_global("snap", snap, state)
                      }),
 
@@ -403,8 +403,8 @@ get_dob_page <- function(text = "When is your date of birth?") {
 
 
 upei_test_options <- function(state) {
-  psychTestR::test_options(title = "UPEI",
-                           admin_password = "@irs@irs2021#",
+  psychTestR::test_options(title = "University of Ottawa",
+                           admin_password = "@irs@irs2021",
                            enable_admin_panel = FALSE,
                            display = psychTestR::display_options(
                              left_margin = 1L,
