@@ -71,7 +71,7 @@ condition_two <- function() {
 
     psychTestR::elt_save_results_to_disk(complete = FALSE),
 
-    psychTestR::one_button_page("In the following trials, you will sing back melodies. Please sing with a \"Daah\" sound."),
+    psychTestR::one_button_page("In the following trials, you will sing back melodies. Please sing with a \"Taah\" sound."),
 
     daa_low(),
     # OR
@@ -283,8 +283,8 @@ MAST_high_wavs_ordered <- c("1_F_high.wav",
 
 choose_MAST21_text <- function(file, trial_type) {
 
-  text_note_daa <- "Please sing back the note with a 'Daa' sound then click 'Stop'."
-  text_melody_daa <- "Please sing back the melody with a 'Daa' sound then click 'Stop'."
+  text_note_daa <- "Please sing back the note with a 'Taa' sound then click 'Stop'."
+  text_melody_daa <- "Please sing back the melody with a 'Taa' sound then click 'Stop'."
   text_note_doo <- "Please sing back the note with a 'Doo' sound then click 'Stop'."
   text_melody_doo <- "Please sing back the melody with a 'Doo' sound then click 'Stop'."
   text_note <- "Please sing back the note then click 'Stop'."

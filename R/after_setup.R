@@ -65,7 +65,7 @@ after_setup_uOttawa <- function(page_type = "record_midi_page",
 
 
 
-      musicassessr::sing_happy_birthday_page(feedback = FALSE, label = "sing_hbd1", text = "Please sing Happy Birthday."),
+      musicassessr::sing_happy_birthday_page(feedback = FALSE, label = "sing_hbd1", text = "Please sing Happy Birthday on the syllable /ta/."),
 
 
       psychTestR::elt_save_results_to_disk(complete = TRUE),
