@@ -21,7 +21,7 @@
 #' @examples
 
 deploy_MAST21V2_2024_uOttawa <- function(
-    app_name = paste("University of Ottawa ", format(Sys.Date(), "%Y"), " Study"),
+    app_name = paste0("University of Ottawa ", format(Sys.Date(), "%Y"), " Study"),
     language,
     musicassessr_state = "test",
     setup_pages = TRUE,
