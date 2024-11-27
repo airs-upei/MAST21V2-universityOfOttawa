@@ -80,8 +80,8 @@ after_setup_uOttawa <- function(page_type = "record_midi_page",
 
         else {
           psychTestR::final_page(shiny::tags$div(
-            shiny::tags$p('Thank You!'),
-            shiny::tags$p("You have completed the test.")))
+            shiny::tags$p('Thank you for completing the MAST21 test.'),
+            shiny::tags$footer("Built in partnership with the AIRS lab at the University of Prince Edward Island.")))
         }
 
       })
